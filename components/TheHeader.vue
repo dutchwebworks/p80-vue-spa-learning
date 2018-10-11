@@ -23,8 +23,11 @@
     };
 </script>
 
-<style>
+<style lang="scss">
     .header {
-
+        color: white;
+        font-size: 26px;
+        padding: 10px 10px;
+        background-color: deeppink;
     }
 </style>

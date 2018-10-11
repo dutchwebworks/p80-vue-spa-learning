@@ -28,6 +28,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+
   ],
 
   /*
@@ -41,7 +42,14 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // Doc: https://github.com/nuxt-community/axios-module#usage
+    ['nuxt-sass-resources-loader', [
+      '@/assets/scss/helpers/_config.scss',
+      '@/assets/scss/helpers/_flexbox.scss',
+      '@/assets/scss/helpers/_grid.scss',
+      '@/assets/scss/helpers/_respond-to.scss'
+    ]]
   ],
   /*
   ** Axios module configuration

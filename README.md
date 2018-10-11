@@ -55,8 +55,30 @@ Now open the project folder in you **code editor** of choice.
 
 ## Adding Sass and Pug
 
+On the Terminal install the following packages to be able to write **Pug** and **Sass** in your project.
+
 ``` bash
-npm i --save-dev node-sass sass-loader pug pug-plain-loader
+npm i --save-dev node-sass sass-loader nuxt-sass-resources-loader pug pug-plain-loader
+```
+
+To have global Sass, like Sass variables, mixins and helpers, available in all your `*.vue` files open the `nuxt.config.js` file. Scroll to the `modules` section. ANd add the new `nuxt-sass-resources-loader` -part below after the `axois` part that is already there. 
+
+Make sure the paths to the `*.scss` files are correct.
+
+```javascript
+  /*
+  ** Nuxt.js modules
+  */
+  modules: [
+    // Doc: https://github.com/nuxt-community/axios-module#usage
+    '@nuxtjs/axios',
+    ['nuxt-sass-resources-loader', [
+      '@/assets/scss/helpers/_config.scss',
+      '@/assets/scss/helpers/_flexbox.scss',
+      '@/assets/scss/helpers/_grid.scss',
+      '@/assets/scss/helpers/_respond-to.scss'
+    ]]
+  ],
 ```
 
 In a `.*vue` file change the `<style>` -block to the one below. Now can write Scss inside the style `<style>` -block.

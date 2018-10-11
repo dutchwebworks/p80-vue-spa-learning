@@ -18,6 +18,10 @@
 
 <style lang="scss">
   .homepage {
+    background-color: green;
 
+    @include respond-to-min('tablet') {
+      background-color: orange;
+    }
   }
 </style>
