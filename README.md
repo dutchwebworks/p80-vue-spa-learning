@@ -87,6 +87,16 @@ In a `.*vue` file change the `<style>` -block to the one below. Now can write Sc
 <style lang="scss">
 ```
 
+### Build for production
+
+Run the command below to have production ready build in the `./docs` directory. For this demo I used the `./docs` directory because it is hosted on Github Pages and accsessable via a custom domain name.
+
+``` bash
+npm run build
+```
+
+  https://p80-vue-spa-learning.dutchwebworks.nl
+
 ## Using this project as reference
 
 Now you can use this project as reference for your above new project.
