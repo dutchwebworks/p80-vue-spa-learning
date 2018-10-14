@@ -1,6 +1,6 @@
 <template>
 	<article class="homepage">
-		<h1 class="heading">Poort80 Frondend Hack morning</h1>
+		<h1 class="heading">{{ title }}</h1>
 
 		<p>Welcome to the Poort80 frontend Vue / Nuxt SPA hack morning</p>
 
@@ -21,7 +21,7 @@
 		name: "Homepage",
 		data() {
 			return {
-				title: "Poort80 Frondend Hack morning",
+				title: "Poort80 Frondend Hack morning!!",
 				rules: [
 					"Thou shall not hide content!",
 					"Thou shall make it accessible",
