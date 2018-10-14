@@ -22,13 +22,12 @@
 <script>
     export default {
         name: "NewsItem",
-        props: ["newsItem"]
-        // props: {
-        //     newsItem: {
-        //         type: Object,
-        //         required: true
-        //     }
-        // }
+        props: {
+            newsItem: {
+                type: Object,
+                required: true
+            }
+        }
     };
 </script>
 
