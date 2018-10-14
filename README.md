@@ -87,15 +87,29 @@ In a `.*vue` file change the `<style>` -block to the one below. Now can write Sc
 <style lang="scss">
 ```
 
-### Build for production
+### Nuxt build for production
 
-Run the command below to have production ready build in the `./docs` directory. For this demo I used the `./docs` directory because it is hosted on Github Pages and accsessable via a custom domain name.
+Run the command below to have production ready build in the `./docs` directory. 
 
 ``` bash
 npm run build
 ```
 
-  https://p80-vue-spa-learning.dutchwebworks.nl
+For this **demo** I used the `./docs` directory for build output because this demo is hosted on **Github Pages** and accessible via a custom **domain name**: https://p80-vue-spa-learning.dutchwebworks.nl
+
+#### Testing the production build locally
+
+Now that the `./docs` directory contains the production build you can test that version using a simple HTTP server.
+
+```bash
+http-server docs
+```
+
+This will start a simple HTTP server and will give you a new URL to test on your local machine. Usually:
+
+	http://localhost:8080
+
+This `./docs` directory can be uploaded to a FTP server root directory to serve your static SPA web site.
 
 ## Using this project as reference
 
