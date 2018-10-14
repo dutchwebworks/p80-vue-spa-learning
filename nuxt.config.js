@@ -76,5 +76,15 @@ module.exports = {
     extend(config, ctx) {
       
     }
+  },
+
+  /*
+  ** Page transitions
+  */
+
+  transition: {
+    name: 'page',
+    mode: 'out-in',
+    type: 'animation'
   }
 }

@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   body {
     margin: 0; 
     padding: 0;
@@ -28,4 +28,34 @@ export default {
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  .page-enter-active {
+	  animation: routerSlideIn .3s ease-out forwards;
+	}
+
+	.page-leave-active {
+	  animation: routerSlideOut .3s ease-out forwards;
+	}
+
+	@keyframes routerSlideIn {
+		0% {
+			opacity: 0;
+			transform: translateY(10px);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes routerSlideOut {
+		0% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
 </style>
