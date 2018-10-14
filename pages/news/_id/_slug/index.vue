@@ -2,14 +2,14 @@
     <section class="news-detail">
         <img
             class="news-detail-thumbnail"
-            v-bind:src="news.thumbnail"
-            v-bind:alt="news.title">
+            v-bind:src="newsItem.thumbnail"
+            v-bind:alt="newsItem.title">
 
-        <h1 class="news-detail-title">{{ news.title }}</h1>        
+        <h1 class="news-detail-title">{{ newsItem.title }}</h1>        
 
-        <p class="news-detail-date"><small>{{ news.date }}</small></p>
+        <p class="news-detail-date"><small>{{ newsItem.date }}</small></p>
 
-        <p class="paragraph">{{ news.description }}</p>
+        <p class="paragraph">{{ newsItem.description }}</p>
     </section>
 </template>
 
@@ -28,7 +28,7 @@
 
         },
         computed: {
-            news() {
+            newsItem() {
                 return this.$store.getters.newsItem(this.$route.params.id);
             },
         }
