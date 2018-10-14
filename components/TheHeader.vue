@@ -1,7 +1,12 @@
 <template>
     <header class="header">
-        <p>Header</p>
-
+        <nav class="header__nav">
+            <ul role="navigation">
+                <li><router-link to="/">Homepage</router-link></li>
+                <li><router-link to="/about">About</router-link></li>
+                <li><router-link to="/news">News</router-link></li>
+            </ul>
+        </nav>
         <hr>
     </header>
 </template>
@@ -25,9 +30,35 @@
 
 <style lang="scss">
     .header {
-        color: white;
-        font-size: 26px;
-        padding: 10px 10px;
-        background-color: deeppink;
+        padding: 10px 0px;
+    }
+
+    .header__nav {
+        font-family: $font-custom;
+        
+        ul {
+            @include flexbox;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 20px 0 0;
+            padding: 0;
+        }
+
+        a {
+            font-size: 16px;
+            color: map-get($colors, 01);
+            text-decoration: none;
+            font-weight: 700;
+            
+
+            &:hover,
+            &.is-active {
+                color: map-get($colors, 02);
+            }
+        }
     }
 </style>

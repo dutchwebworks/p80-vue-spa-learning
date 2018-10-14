@@ -1,9 +1,9 @@
 <template>
-  <section class="wrapper">
+  <div class="wrapper">
     <TheHeader></TheHeader>
     <nuxt/>
     <TheFooter></TheFooter>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -22,11 +22,10 @@ export default {
   body {
     margin: 0; 
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
   }
 
   .wrapper {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 </style>

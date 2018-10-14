@@ -15,7 +15,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { href: "https://fonts.googleapis.com/css?family=Source+Sans+Pro", rel: "stylesheet" }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,700' }
     ]
   },
 
@@ -28,13 +28,14 @@ module.exports = {
   ** Global CSS
   */
   css: [
-
+    "@/assets/scss/common.scss"
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    "~/plugins/slugify.js"
   ],
 
   /*
@@ -43,7 +44,6 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    // Doc: https://github.com/nuxt-community/axios-module#usage
     ['nuxt-sass-resources-loader', [
       '@/assets/scss/helpers/_config.scss',
       '@/assets/scss/helpers/_flexbox.scss',
@@ -56,6 +56,14 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  /*
+  ** Vue-router
+  */
+  router: {
+    linkActiveClass: "",
+    linkExactActiveClass: "is-active"
   },
 
   /*
