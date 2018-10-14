@@ -99,7 +99,13 @@ For this **demo** I used the `./docs` directory for build output because this de
 
 #### Testing the production build locally
 
-Now that the `./docs` directory contains the production build you can test that version using a simple HTTP server.
+Now that the `./docs` directory contains the production build you can test that version using a simple HTTP server. First you have to install it if you don't already have it.
+
+```bash
+npm i -g http-server
+```
+
+After installing run the command below inside the same directory where this project's `package.json` file resides.
 
 ```bash
 http-server docs
