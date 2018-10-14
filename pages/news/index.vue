@@ -9,7 +9,7 @@
 				v-bind:key="newsItem.id">
 
                 <nuxt-link
-                    v-bind:to="'/news/' + newsItem.id + '/' + $options.filters.slugify(newsItem.title)">
+                    v-bind:to="'/news/' + newsItem.id + '/' + newsItem.date + '/' + $options.filters.slugify(newsItem.title)">
                     <img
                         class="news__item-thumbnail"
                         v-bind:src="newsItem.thumbnail"
@@ -18,12 +18,12 @@
 
 				<h3 class="news__item-title">
                     <nuxt-link
-                        v-bind:to="'/news/' + newsItem.id + '/' + $options.filters.slugify(newsItem.title)">
+                        v-bind:to="'/news/' + newsItem.id + '/' + newsItem.date + '/' + $options.filters.slugify(newsItem.title)">
                         {{ newsItem.title }}
                     </nuxt-link>
                 </h3>
 
-				<p class="news__item-date"><small>{{ newsItem.date }}</small></p>
+				<p class="news__item-date"><small>{{ newsItem.dateNice }}</small></p>
 			</article>
 		</section>
 	</section>
@@ -32,14 +32,6 @@
 <script>
     export default {
         name: "News",
-        components: {
-            
-        },
-        data() {
-            return {
-                
-            }
-        },
         computed: {
             newsItems() {
                 return this.$store.getters.news;

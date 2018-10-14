@@ -2,29 +2,30 @@
   <section class="homepage">
         <h1 class="heading">Poort80 Frondend Hack morning</h1>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, quas?</p>
+        <p>Welcome to the Poort80 frontend Vue / Nuxt SPA hack morning</p>
 
-        <p>Amet error laborum, molestiae asperiores laboriosam inventore nisi. Itaque, cumque!</p>
+        <p><img src="/img/nuxt-logo.png" alt="Nuxt"></p>       
 
-        <p><img src="/img/nuxt-logo.png" alt="Nuxt"></p>
-        
-        <p>A nam ipsam deserunt sed magnam pariatur atque quidem libero.</p>
+        <h2>Frontend rules:</h2>
+
+        <ul>
+          <li v-for="rule in rules">{{ rule }}</li>
+        </ul>
     </section>
 </template>
 
 <script>
   export default {
     name: "Homepage",
-    components: {
-      
-    },
     data() {
       return {
-
+        title: "Poort80 Frondend Hack morning",
+        rules: [
+          "Thau shall not hide content!",
+          "Thau shall do a better layout job than Bootstrap",
+          "Thau shall make it accessible"
+        ]
       }
-    },
-    methods: {
-
     }
   };
 </script>
