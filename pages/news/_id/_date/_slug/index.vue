@@ -28,6 +28,7 @@
 
 <style lang="scss">
     .news-detail {
+        margin-top: 40px;
         font-family: $font-custom;
     }
 
