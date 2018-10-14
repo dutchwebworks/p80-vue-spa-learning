@@ -2,7 +2,7 @@
     <footer class="footer">
         <p>&copy; Poort80.nl Amsterdam, october 2018</p>
 
-        <p><a href="https://github.com/dutchwebworks/p80-vue-spa-learning">View on Github</a></p>
+        <p><a href="https://github.com/dutchwebworks/p80-vue-spa-learning" target="_blank">View on Github</a></p>
     </footer>
 </template>
 
