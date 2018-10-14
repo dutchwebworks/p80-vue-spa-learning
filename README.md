@@ -87,6 +87,16 @@ In a `.*vue` file change the `<style>` -block to the one below. Now can write Sc
 <style lang="scss">
 ```
 
+To use Pug in the `*.vue` file's `<template>` -block make sure to change it to:
+
+```html
+<template lang="pug">
+```
+
+## Using this project as reference
+
+Now you can use this project as reference for your above new project.
+
 ### Nuxt build for production
 
 Run the command below to have production ready build in the `./docs` directory. 
@@ -111,12 +121,8 @@ After installing run the command below inside the same directory where this proj
 http-server docs
 ```
 
-This will start a simple HTTP server and will give you a new URL to test on your local machine. Usually:
+This will start a simple HTTP server and will give you a new URL to test on your local machine. Open the URL mentioned on the command-line, usually it's:
 
 	http://localhost:8080
 
 This `./docs` directory can be uploaded to a FTP server root directory to serve your static SPA web site.
-
-## Using this project as reference
-
-Now you can use this project as reference for your above new project.
