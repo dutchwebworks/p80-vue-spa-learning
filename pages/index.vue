@@ -23,9 +23,9 @@
 			return {
 				title: "Poort80 Frondend Hack morning",
 				rules: [
-					"Thau shall not hide content!",
-					"Thau shall do a better layout job than Bootstrap",
-					"Thau shall make it accessible"
+					"Thou shall not hide content!",
+					"Thou shall make it accessible",
+					"Thou shall do a better layout job than Bootstrap"
 				]
 			}	
 		}
