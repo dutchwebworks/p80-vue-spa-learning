@@ -7,7 +7,9 @@
 
         <h1 class="news-detail-title">{{ newsItem.title }}</h1>        
 
-        <p class="news-detail-date"><small>{{ newsItem.dateNice }}</small></p>
+        <p class="news-detail-date">
+            <small>{{ newsItem.dateNice }}</small>
+        </p>
 
         <p class="paragraph">{{ newsItem.description }}</p>
     </section>
@@ -19,7 +21,7 @@
         computed: {
             newsItem() {
                 return this.$store.getters.newsItem(this.$route.params.id);
-            },
+            }
         }
     };
 </script>

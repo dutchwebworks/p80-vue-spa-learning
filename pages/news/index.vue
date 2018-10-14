@@ -1,5 +1,5 @@
 <template>
-	<section class="news">
+	<div class="news">
 		<h1 class="heading">News</h1>
 
 		<section class="news__items">
@@ -9,7 +9,7 @@
 				v-bind:key="newsItem.id">
 			</NewsThumbItem>
 		</section>
-	</section>
+	</div>
 </template>
 
 <script>

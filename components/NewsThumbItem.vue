@@ -15,7 +15,9 @@
             </nuxt-link>
         </h3>
 
-        <p class="news__item-date"><small>{{ newsItem.dateNice }}</small></p>
+        <p class="news__item-date">
+            <small>{{ newsItem.dateNice }}</small>
+        </p>
     </article>
 </template>
 
@@ -32,7 +34,12 @@
 </script>
 
 <style lang="scss">
-	.news__item-title {
+    .news__item-thumbnail {
+		max-width: 100%;
+		box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.25);
+    }
+    
+    .news__item-title {
         color: map-get($colors, 02);
         
         a {
@@ -43,12 +50,7 @@
                 color: map-get($colors, 01);
             }
         }
-	}
-
-	.news__item-thumbnail {
-		max-width: 100%;
-		box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.25);
-	}
+	}	
 
 	.news__item-description {
 		line-height: 1.6;

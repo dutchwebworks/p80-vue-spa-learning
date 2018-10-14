@@ -1,8 +1,8 @@
 <template>
     <footer class="footer">
-        <hr>
+        <p>&copy; Poort80.nl Amsterdam, october 2018</p>
 
-        <p>&copy; Poort80.nl</p>
+        <p><a href="https://github.com/dutchwebworks/p80-vue-spa-learning">View on Github</a></p>
     </footer>
 </template>
 
@@ -14,15 +14,24 @@
 
 <style lang="scss">
     .footer {
+        @include flexbox;
+        @include justify-content(space-between);
+        margin-top: 10px;
+        padding-top: 10px;
         font-family: $font-custom;
-        
-        hr {
-            margin: 0;
-        }
+        border-top: 1px solid #bbb;
 
         p {
             margin: 10px 0 0 0;
             color: #aaa;
+        }
+
+        a {
+            color: map-get($colors, 02);
+
+            &:hover {
+                color: map-get($colors, 01);
+            }
         }
     }
 </style>

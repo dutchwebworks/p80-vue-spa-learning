@@ -1,40 +1,37 @@
 <template>
-  <div class="wrapper">
-    <TheHeader></TheHeader>
-    <nuxt/>
-    <TheFooter></TheFooter>
-  </div>
+	<div class="wrapper">
+		<TheHeader/>
+
+		<nuxt/>
+		
+		<TheFooter/>
+	</div>
 </template>
 
 <script>
-import TheHeader from "~/components/TheHeader";
-import TheFooter from "~/components/TheFooter";
+	import TheHeader from "@/components/TheHeader";
+	import TheFooter from "@/components/TheFooter";
 
-export default {
-  components: {
-    TheHeader,
-    TheFooter
-  }
-}
+	export default {
+		components: {
+			TheHeader,
+			TheFooter
+		}
+	}
 </script>
 
 <style lang="scss">
-  body {
-    margin: 0; 
-    padding: 0;
-  }
+	.wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .page-enter-active {
-	  animation: routerSlideIn .3s ease-out forwards;
+	.page-enter-active {
+		animation: routerSlideIn .3s ease-out forwards;
 	}
 
 	.page-leave-active {
-	  animation: routerSlideOut .3s ease-out forwards;
+		animation: routerSlideOut .3s ease-out forwards;
 	}
 
 	@keyframes routerSlideIn {

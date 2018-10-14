@@ -12,21 +12,7 @@
 
 <script>
     export default {
-        name: "About",
-        head: {
-            title: "About the thing"
-        },
-        components: {
-            
-        },
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-            
-        }
+        name: "About"
     };
 </script>
 
