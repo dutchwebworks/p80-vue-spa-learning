@@ -2,9 +2,9 @@
     <header class="header">
         <nav class="header__nav">
             <ul role="navigation">
-                <li><router-link to="/">Homepage</router-link></li>
-                <li><router-link to="/about">About</router-link></li>
-                <li><router-link to="/news">News</router-link></li>
+                <li><nuxt-link to="/">Homepage</nuxt-link></li>
+                <li><nuxt-link to="/about">About</nuxt-link></li>
+                <li><nuxt-link to="/news">News</nuxt-link></li>
             </ul>
         </nav>
         <hr>
