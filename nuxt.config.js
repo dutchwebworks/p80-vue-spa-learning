@@ -79,6 +79,19 @@ module.exports = {
   },
 
   /*
+  ** Generate configuration
+  */
+
+  generate: {
+    /*
+    ** Build output, default is ./dist
+    ** This demo site is deployed to Github Pages with a custom domain name
+    ** Github Pages will use ./docs for site root
+    */
+    dir: 'docs'
+  },
+
+  /*
   ** Page transitions
   */
 
