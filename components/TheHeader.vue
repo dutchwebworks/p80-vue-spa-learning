@@ -20,7 +20,7 @@
     .header {
         margin: 0 0 0 0;
         padding: 10px 0px;
-        border-bottom: 1px solid #bbb;
+        border-bottom: 1px solid map-get($colors, 03);
     }
 
     .header__nav {
