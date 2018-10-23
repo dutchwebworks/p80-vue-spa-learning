@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import News from "./modules/news";
+import News from "./modules/News";
 
 Vue.use(Vuex)
 
